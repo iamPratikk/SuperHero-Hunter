@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+          integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <nav class="navBar">
+        <div class="div-1">
+            <img class="logo-img" src="images/logoheader.jpg" alt>
+            <a href="index.html" class="header-logo">SuperHero Hunter</a>
+        </div>
+        
+        <div class="fav-box">
+            <div class="search-box">
+                <button class="btn-search"><span class="material-symbols-outlined">
+                    🔍
+                    </span></button>
+                <input id="search-bar" type="text" class="input-search" placeholder="Search your SuperHero...">
+              </div>
+            <div>
+                <a href="FavoriteHero.html">
+                <button class="button-49" role="button">Favourites</button>
+            </a>
+            </div>
+        </div>
+    </nav>
+    <div class="box">
+         <ul class="ul-col" id="search-result">
+    </div>
+    <script   src="api-data.js"></script>
+    <script src="app.mjs"></script>
+</body>
+</html>

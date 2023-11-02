@@ -1,3 +1,9 @@
+require('dotenv').config();
+
+const apiKey = process.env.API_KEY;
+// Now you can use the apiKey variable in your code.
+
+
 // get favourites heros id from local storage and store in an array
 var arr=JSON.parse(localStorage.getItem("favourites"));
 
@@ -25,7 +31,7 @@ function removeHero(id) {
 let html="";
 function fetchData(){
     for (let i = 0; i < arr.length; i++) {
-        fetch(`https://www.superheroapi.com/api.php/586069776286026/${arr[i]}`)
+        fetch(`https://www.superheroapi.com/api.php/${apiKey}/${arr[i]}`)
             .then((response) => response.json())
             .then((data) => {
             html+=     `
